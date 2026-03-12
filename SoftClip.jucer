@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Mi42cI" name="SoftClip" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              companyName="Ryan Blaney" pluginFormats="buildAU,buildStandalone,buildVST3"
+              pluginManufacturer="Ryan Blaney" pluginManufacturerCode="RrB1"
+              pluginCode="ScP1" pluginName="SoftClip" pluginDesc="A basic softclipper with pre-EQ and curve params.">
+  <MAINGROUP id="f6tyIh" name="SoftClip">
+    <GROUP id="{BED33B7B-D99F-577C-AB26-CB3E71BFE372}" name="UITools">
+      <FILE id="N8PFXa" name="AudioOscilloscope.cpp" compile="1" resource="0"
+            file="Source/UITools/AudioOscilloscope.cpp"/>
+      <FILE id="wHomek" name="AudioOscilloscope.h" compile="0" resource="0"
+            file="Source/UITools/AudioOscilloscope.h"/>
+      <FILE id="Sp1cJj" name="DecibelLitBorder.cpp" compile="1" resource="0"
+            file="Source/UITools/DecibelLitBorder.cpp"/>
+      <FILE id="qCuodM" name="DecibelLitBorder.h" compile="0" resource="0"
+            file="Source/UITools/DecibelLitBorder.h"/>
+      <FILE id="UOawM7" name="PresetBrowser.cpp" compile="1" resource="0"
+            file="Source/UITools/PresetBrowser.cpp"/>
+      <FILE id="SUSCMv" name="PresetBrowser.h" compile="0" resource="0" file="Source/UITools/PresetBrowser.h"/>
+      <FILE id="axXyjJ" name="PresetManager.cpp" compile="1" resource="0"
+            file="Source/UITools/PresetManager.cpp"/>
+      <FILE id="qaX3PG" name="PresetManager.h" compile="0" resource="0" file="Source/UITools/PresetManager.h"/>
+    </GROUP>
+    <GROUP id="{A605B71C-533B-74C8-F66B-1D92F5F7D0F9}" name="Saturators">
+      <FILE id="noy6Ed" name="RamperLinear.h" compile="0" resource="0" file="Source/Saturators/RamperLinear.h"/>
+      <FILE id="TT4ldc" name="SoftClip.h" compile="0" resource="0" file="Source/Saturators/SoftClip.h"/>
+    </GROUP>
+    <GROUP id="{819E8661-74A1-D38A-DA5C-D59A874930FA}" name="Source">
+      <GROUP id="{2BC4E1F9-777E-38F6-92C4-25BE505B6B07}" name="ImpulseResponses">
+        <FILE id="a42fEZ" name="OD-E112-K100-DYN-57-P09-10.wav" compile="0"
+              resource="1" file="Source/ImpulseResponses/SSP2/DYN-57/OD-E112-K100-DYN-57-P09-10.wav"/>
+      </GROUP>
+      <GROUP id="{4036D489-2EBF-9857-E914-9C0F991CAEAA}" name="Parameters">
+        <FILE id="QtPL21" name="PluginGlobals.cpp" compile="1" resource="0"
+              file="Source/PluginGlobals.cpp"/>
+        <FILE id="DwIQdO" name="PluginGlobals.h" compile="0" resource="0" file="Source/PluginGlobals.h"/>
+      </GROUP>
+      <FILE id="D1MnFl" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="azXC4X" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="FskGwJ" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="o3UG6l" name="StyleSheet.h" compile="0" resource="0" file="Source/StyleSheet.h"/>
+      <FILE id="XGApUM" name="StyleSheet.cpp" compile="1" resource="0" file="Source/StyleSheet.cpp"/>
+      <FILE id="iaG282" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SoftClip" enablePluginBinaryCopyStep="1"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SoftClip"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" smallIcon="YyqWd2" bigIcon="YyqWd2">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SoftClip" enablePluginBinaryCopyStep="1"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SoftClip" enablePluginBinaryCopyStep="1"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

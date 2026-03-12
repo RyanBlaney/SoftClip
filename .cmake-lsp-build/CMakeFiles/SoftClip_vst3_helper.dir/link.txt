@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/SoftClip_vst3_helper.dir/link.d CMakeFiles/SoftClip_vst3_helper.dir/external/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.cpp.o -o SoftClip_vst3_helper

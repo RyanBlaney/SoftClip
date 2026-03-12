@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/penumbra/Projects/DSP/Plugins/SoftClip/.cmake-lsp-build/cmake_install.cmake",
+		"/home/penumbra/Projects/DSP/Plugins/SoftClip/.cmake-lsp-build/external/JUCE/cmake_install.cmake",
+		"/home/penumbra/Projects/DSP/Plugins/SoftClip/.cmake-lsp-build/external/JUCE/modules/cmake_install.cmake",
+		"/home/penumbra/Projects/DSP/Plugins/SoftClip/.cmake-lsp-build/external/JUCE/extras/Build/cmake_install.cmake",
+		"/home/penumbra/Projects/DSP/Plugins/SoftClip/.cmake-lsp-build/external/JUCE/extras/Build/juceaide/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

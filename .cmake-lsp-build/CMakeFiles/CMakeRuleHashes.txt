@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+af1335ef105ccf051b7f83380628a50c SoftClip_artefacts/JuceLibraryCode/JuceHeader.h
